@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icon-FlavorVault.png" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Add.html">Add</a>
+            <a href="View.html" class="active">View</a>
+        </nav>
+    </header>
+
+    <h1 id="title">Explore Recipes from Your FlavorVault</h1>
+    <p id="discover">Discover the delicious recipes you've added to your vault</p>
+    <input class="search" type="text" id="search" name="search" placeholder="Search">
+    <ul id="searchResult"></ul>
+    <div style="margin: 40px;" id="view-message">
+
+    </div>
+    <div id="ShowCards">
+        <div id="cards">
+
+        </div>
+
+
+    </div>
+    <div id="modal_container">
+        <h2 id="modal-title"></h2>
+
+
+        <div class="modal-content">
+            <img id="modal-image" alt="Recipe Image" />
+            <div id="modal-text">
+                <p id="modal-description"></p>
+                <ul id="modal-Ingred"></ul>
+            </div>
+        </div>
+
+        <p style="margin: 0;">
+
+        </p>
+        <button style=" position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 6px 12px;
+      border: none;
+      background-color: #f44336;
+      color: white;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;" type="submit" id="close">Close</button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

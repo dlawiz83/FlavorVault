@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icon-FlavorVault.png" />
+
+</head>
+
+<body class="add">
+    <header>
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Add.html" class="active">Add</a>
+            <a href="View.html">View</a>
+        </nav>
+    </header>
+    <h1 id="title"> Add Your Recipe to FlavorVault </h1>
+    <div id="form">
+        <form>
+            <label id="R_title" for="Recipe_title">Recipe Title</label><br>
+            <input type="text" id="Recipe_title" name="Recipe_title" required><br><br>
+
+            <label id="Recipe_Dec" for="Recipe_Description">Recipe Description</label><br>
+            <textarea id="Recipe_Description" name="Recipe_Description" required></textarea><br><br>
+
+            <label id="ingre" for="Recipe_Ingred">Recipe Ingredients</label><br>
+            <textarea id="Recipe_Ingred" name="Recipe_Ingred" required></textarea><br><br>
+
+            <label id="upload_L" for="upload">Upload an Image</label><br>
+            <input type="file" id="upload" name="upload" accept="image/*" required>
+
+            <button id="button" class="button" type="submit">Save Recipe</button>
+
+
+
+
+        </form>
+        <div style="margin: 40px;" id="message">
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
